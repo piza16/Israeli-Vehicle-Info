@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "./components/Button";
 import {DynamicTextArea} from "./components/DynamicTextArea";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         >
           Learn Tailwind CSS v3.x
         </a>
+        <Button/>
       </div>
       <DynamicTextArea/>
     </div>
