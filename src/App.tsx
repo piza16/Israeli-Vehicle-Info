@@ -1,4 +1,5 @@
 import React from "react";
+import {DynamicTextArea} from "./components/DynamicTextArea";
 
 function App() {
   return (
@@ -40,9 +41,7 @@ function App() {
           Learn Tailwind CSS v3.x
         </a>
       </div>
-      <div>
-        <textarea className="mt-4 text-black" name="" id="">cdfdd</textarea>
-      </div>
+      <DynamicTextArea/>
     </div>
   );
 }
