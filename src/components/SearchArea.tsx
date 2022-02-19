@@ -76,11 +76,11 @@ export const SearchArea = () => {
   return (
   <div className="w-full h-full mr-2">
         <div className="w-full h-1/3 mt-0 mr-2 flex flex-col items-center justify-center">
-            <div style={{maxWidth:"646px" ,backgroundImage:`url("https://static.wixstatic.com/media/08a2ae_627f43954fbb4adfa22e5ffe0f8503d9~mv2.png/v1/fill/w_350,h_83,al_c,q_85/plate.webp")`}} className="h-1/2 sm:w-4/5 lg:w-1/2 flex flex-col items-end sm:items-center justify-center text-black bg-cover 2xl:bg-contain bg-no-repeat">
-                <input className="placeholder-blue-700 text-5xl sm:text-7xl" placeholder="מספר רכב" style={{background: "transparent",border: "none",fontWeight:"bold",width:"82%",height:"80%",maxWidth:"400px", textAlign:"center"}} value={registarationNum} onChange={handleChange} />
+            <div style={{maxWidth:"646px" ,backgroundImage:`url("https://static.wixstatic.com/media/08a2ae_627f43954fbb4adfa22e5ffe0f8503d9~mv2.png/v1/fill/w_350,h_83,al_c,q_85/plate.webp")`}} className="h-1/2 sm:w-4/5 lg:w-1/2 flex flex-row items-end sm:items-center justify-center text-black bg-cover 2xl:bg-contain 2xl:ml-20 bg-no-repeat">
+                <input className="placeholder-blue-700 text-5xl sm:text-7xl 2xl:mr-12" placeholder="מספר רכב" style={{background: "transparent",border: "none",fontWeight:"bold",width:"82%",height:"80%",maxWidth:"400px", textAlign:"center"}} value={registarationNum} onChange={handleChange} />
             </div>
-            <div className="h-1/2 p-4 flex flex-col items-end justify-center">
-                <button onClick={handleClick} type="button" className='flex max-w-sm w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 focus:outline-none text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-5'>
+            <div className="h-1/2 p-2 flex flex-col items-end justify-center">
+                <button onClick={handleClick} type="button" className='flex max-w-sm w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 focus:outline-none text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-4'>
                     <div className="flex sm:flex-cols-12 gap-2">
                         <div className="col-span-1">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
