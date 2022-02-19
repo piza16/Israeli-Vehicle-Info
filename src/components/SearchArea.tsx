@@ -92,9 +92,9 @@ export const SearchArea = () => {
                 </button>
             </div>
             {isLoading && <Loading />}   
-            {message && <MessageForUser message={message} />} 
         </div>
         <div className="w-full h-2/3 mt-0 mr-2">
+            {message && <MessageForUser message={message}/>} 
             <DataTable data={carGovData} carLink={carPhoto}/>
         </div>
   </div>
