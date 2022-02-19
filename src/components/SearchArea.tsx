@@ -4,7 +4,6 @@ import { DataTable } from "./DataTable";
 import { Loading } from "./Loading";
 import { MessageForUser } from "./MessageForUser";
 import {ICar} from "./DataInterface"
-// import { TranslateManufacture } from "./TranslateManufacture";
 
 export const SearchArea = () => {
   const [registarationNum, setRegistarationNum] = useState("");
@@ -35,12 +34,12 @@ export const SearchArea = () => {
       })
       .then(function (record) {
         if (record?._id && 6<registarationNum.length && registarationNum.length<9) {
+          console.log(record)
           setCarGovData(record);
         } else {
           setMessage("לא נמצא מידע עבור מספר רכב זה");
           setIsLoading(false);
         }
-        //setIsLoading(false);
         return record;
       })
       .then(function (record){
@@ -55,7 +54,6 @@ export const SearchArea = () => {
           }
         };
         axios.request(options).then(function (resp) {
-            // console.log(resp.data.data.translation)
             return [resp.data.data.translation,record.kinuy_mishari,record.shnat_yitzur]   
         })
         .then(function(arr){
@@ -77,10 +75,9 @@ export const SearchArea = () => {
   };
   return (
   <div className="w-full h-full mr-2">
-        <div className="w-full h-1/3 mt-2 mr-2">
-            <div style={{backgroundImage:`url("https://static.wixstatic.com/media/08a2ae_627f43954fbb4adfa22e5ffe0f8503d9~mv2.png/v1/fill/w_350,h_83,al_c,q_85/plate.webp")`}} className="h-1/2 flex flex-col items-end justify-center text-black bg-cover bg-no-repeat">
-                {/* flex flex-col items-center justify-center */}
-                <input className="placeholder-blue-700" placeholder="מספר רכב" style={{background: "transparent",border: "none",fontSize:"4rem",fontWeight:"bold",width:"82%",height:"80%",maxWidth:"500px", textAlign:"center"}} value={registarationNum} onChange={handleChange} />
+        <div className="w-full h-1/3 mt-0 mr-2 flex flex-col items-center justify-center">
+            <div style={{maxWidth:"646px" ,backgroundImage:`url("https://static.wixstatic.com/media/08a2ae_627f43954fbb4adfa22e5ffe0f8503d9~mv2.png/v1/fill/w_350,h_83,al_c,q_85/plate.webp")`}} className="h-1/2 sm:w-4/5 lg:w-1/2 flex flex-col items-end sm:items-center justify-center text-black bg-cover 2xl:bg-contain bg-no-repeat">
+                <input className="placeholder-blue-700 text-5xl sm:text-7xl" placeholder="מספר רכב" style={{background: "transparent",border: "none",fontWeight:"bold",width:"82%",height:"80%",maxWidth:"400px", textAlign:"center"}} value={registarationNum} onChange={handleChange} />
             </div>
             <div className="h-1/2 p-4 flex flex-col items-end justify-center">
                 <button onClick={handleClick} type="button" className='flex max-w-sm w-full bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 focus:outline-none text-white text-2xl uppercase font-bold shadow-md rounded-full mx-auto p-5'>
@@ -97,7 +94,7 @@ export const SearchArea = () => {
             {isLoading && <Loading />}   
             {message && <MessageForUser message={message} />} 
         </div>
-        <div className="w-full h-2/3 mt-2 mr-2">
+        <div className="w-full h-2/3 mt-0 mr-2">
             <DataTable data={carGovData} carLink={carPhoto}/>
         </div>
   </div>
