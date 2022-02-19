@@ -2,7 +2,7 @@ interface IProps {
     message: string;
   }
   const styling={
-      color:"red",
+      color:"white",
       fontWeigth:"bold",
       fontSize:"2.5rem"
   }
