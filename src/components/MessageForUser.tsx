@@ -8,6 +8,6 @@ interface IProps {
   }
   
   export const MessageForUser = (props: IProps) => {
-    return <h2 style={styling} className="text-right ">{props.message}</h2>;
+    return <h2 style={styling} className="text-center">{props.message}</h2>;
   };
   
