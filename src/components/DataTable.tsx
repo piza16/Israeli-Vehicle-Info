@@ -22,97 +22,97 @@ export const DataTable = (props: any) => {
                    </thead>
                    <tbody>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    {props.data.mispar_rechev}
                                </p>
                            </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    מספר רכב
                                </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    {props.data.tozeret_nm}
                                </p>
                             </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    יצרן
                                </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                     {props.data.kinuy_mishari}
                                </p>
                             </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    דגם
                                 </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    {props.data.ramat_gimur}
                                 </p>
                            </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    רמת גימור
                                 </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    {props.data.tzeva_rechev}
                                 </p>
                            </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    צבע הרכב
                                 </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                 {props.data.shnat_yitzur}
                                 </p>
                            </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                שנת ייצור
                                 </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    {new Date(props.data.tokef_dt).toLocaleDateString('en-GB')}
                                 </p>
                            </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                תוקף הטסט
                                 </p>
                            </td>
                        </tr>
                        <tr>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                {props.data.zmig_kidmi}+{props.data.zmig_ahori}
                                 </p>
                            </td>
-                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-sm sm:text-2xl lg:text-lg">
-                               <p className="text-blue-700 font-bold whitespace-no-wrap">
+                           <td className="px-2 py-1 border-b border-gray-200 bg-none text-base sm:text-2xl lg:text-lg">
+                               <p className="text-[#FF00FF] font-bold whitespace-no-wrap">
                                    צמיגים אחורי/קדמי
                                 </p>
                            </td>
@@ -121,7 +121,7 @@ export const DataTable = (props: any) => {
                </table>
            </div>
            {props.data?.kvutzat_zihum && <div className="sm:mt-4 lg:mt-1 flex flex-col items-center justify-center text-center">
-                <h1 className="text-white sm:text-3xl"><span className="text-xl sm:text-3xl font-bold" style={{color:(ChooseColor(props.data.kvutzat_zihum))}}>{props.data.kvutzat_zihum }</span> קבוצת זיהום</h1>
+                <h1 className="text-white text-xl font-bold sm:text-3xl"><span className="text-xl sm:text-3xl font-bold" style={{color:(ChooseColor(props.data.kvutzat_zihum))}}>{props.data.kvutzat_zihum }</span> קבוצת זיהום</h1>
                 <div className="mt-2 h-6 sm:h-9 lg:h-8 relative w-3/4  rounded-full overflow-hidden">
                     <div className=" w-full h-full bg-gray-200 absolute "></div>
                     <div className=" h-full absolute" style={{width:(100/15*props.data.kvutzat_zihum)+"%",backgroundColor:(ChooseColor(props.data.kvutzat_zihum))}}></div>
