@@ -8,7 +8,7 @@ It gives you details & specs for every private vehicle in Israel given a license
 
 ## Live Application URL
 
-### https://aditya-sridhar.github.io/simple-reactjs-app
+### https://silly-jennings-515de5.netlify.app
 
 This URL has the application deployed in
 with help of [Netlify](https://www.netlify.com/) - web deployment platform.
