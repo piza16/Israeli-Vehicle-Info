@@ -6,11 +6,11 @@ import { MessageForUser } from "./MessageForUser";
 import {ICar} from "./DataInterface"
 
 export const SearchArea = () => {
-  const [registarationNum, setRegistarationNum] = useState("");
+  const [registarationNum, setRegistarationNum] = useState<string>("");
   const [carGovData, setCarGovData] = useState<ICar|{}>({});
-  const [isLoading, setIsLoading] = useState(false);
-  const [message, setMessage] = useState("");
-  const [carPhoto, setCarPhoto] = useState("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>("");
+  const [carPhoto, setCarPhoto] = useState<string>("");
   
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -44,7 +44,7 @@ export const SearchArea = () => {
       })
       .then(function (record){
         const spaceIndex=(record.tozeret_nm.indexOf(" "));
-        const options : any= {
+        const options : object= {
           method: 'GET',
           url: 'https://google-translate20.p.rapidapi.com/translate',
           params: {text: record.tozeret_nm.slice(0,spaceIndex), tl: 'en', sl: 'he'},
